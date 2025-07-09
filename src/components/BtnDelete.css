@@ -1,0 +1,17 @@
+.taskDelete{
+    color: #8d65e3;
+    height: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.taskDelete:hover{
+    color: #FF0033;
+}
+
+.taskDelete img{
+    height: 100%;
+    background: none;
+}
