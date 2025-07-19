@@ -3,15 +3,20 @@ import "./TaskList.css";
 import { Task } from "./components/Task";
 
 export function TaskList() {
-    const [taskList, setTaskList] = useState([]);
+    const [taskList, setTaskList] = useState(JSON.parse(localStorage.getItem("tasklist") || "[]"));
     const [isTaskFormVisible, setIsTaskFormVisible] = useState(false);
     const formRef = useRef(null);
+
+    useEffect(() => {
+        localStorage.setItem("tasklist", JSON.stringify(taskList))
+    }, [taskList]);
 
     useEffect(() => {
         if (isTaskFormVisible && formRef.current) {
             formRef.current.focus();
         }
     }, [isTaskFormVisible]);
+
 
     function toggleTaskForm() {
         setIsTaskFormVisible((isTaskFormVisibleNow) => !isTaskFormVisibleNow);
