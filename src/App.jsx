@@ -1,13 +1,7 @@
-import "./App.css";
-import { TaskList } from "./TaskList";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
-    return (
-        <main >
-            <h1> Lista de tarefas </h1>
-            <TaskList />
-        </main>
-    );
+	return <HomePage />;
 }
 
 export default App;

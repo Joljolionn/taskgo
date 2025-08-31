@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { BtnDelete } from "./BtnDelete";
-import { TaskCheckbox } from "./TaskCheckbox";
+import { BtnDelete } from "../BtnDelete/BtnDelete";
+import { TaskCheckbox } from "../TaskCheckbox/TaskCheckbox";
 
 import "./Task.css";
 

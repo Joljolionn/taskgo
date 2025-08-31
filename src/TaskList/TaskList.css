@@ -1,0 +1,50 @@
+.taskList {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.btnAddTask {
+	width: 40%;
+	height: 2em;
+	margin: 30px;
+	border: none;
+	border-radius: 5px;
+	background: #8d65e3;
+	box-shadow: 3px 4px 4px 1px black;
+	cursor: pointer;
+}
+
+.btnAddTask:hover {
+	background: #62469e;
+	border: 1px solid #000;
+}
+
+.newTask {
+	width: 80%;
+	margin: 20px;
+	display: flex;
+}
+
+.newTask .newTaskInput {
+	width: 90%;
+	color: white;
+	margin-left: 15px;
+	margin-right: auto;
+	font-size: 1em;
+	background: none;
+}
+
+.newTask .btnNewTaskConfirm {
+	width: 50px;
+	border: none;
+	background: #8d65e3;
+	cursor: pointer;
+}
+
+.newTask .btnNewTaskConfirm:hover {
+	background: #62469e;
+	border: 1px solid #000;
+}
