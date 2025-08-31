@@ -1,13 +1,13 @@
 .taskRow {
-  width: 80%;
-  height: 2.5em;
+  width: 100%;
+  height: 4em;
   display: flex;
   flex-direction: row;
   align-items: center;
+  border: 1px solid #000;
 }
 
 .taskTitle {
-  color: white;
   margin-left: 15px;
   margin-right: auto;
   font-size: 1em;
@@ -17,4 +17,9 @@
 
 .taskTitle:hover {
   text-decoration: underline;
+}
+
+.taskRow .ampliar {
+    margin-left: 20px;
+    text-align: center;
 }

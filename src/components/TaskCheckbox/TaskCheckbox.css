@@ -1,0 +1,38 @@
+.taskCompleted {
+	width: 1.5vw;
+	height: 1.5vw;
+    margin-right: 30px;
+	position: relative;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.taskCompleted .taskCheckbox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.taskCompleted .taskCheckmark {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: none;
+	border: 1px solid #62469e;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.taskCheckbox:focus + .taskCheckmark {
+	outline: 2px solid #62469e;
+}
+
+.taskCompleted:hover .taskCheckmark {
+	background: #62469e;
+	border: 2px solid #000;
+}

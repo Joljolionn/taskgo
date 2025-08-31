@@ -1,13 +1,8 @@
-*{
-    box-sizing: border-box;
-    font-family: helvetica;
-}
-
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    background-color: #1A181D;
-    color: #EBE9ED;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
 }

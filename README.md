@@ -1,12 +1,12 @@
-# react-todo-list
+# React + Vite
 
-Uma aplicação simples para treinar minhas habilidades com React
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-TODOS:
+Currently, two official plugins are available:
 
-- Mudar os inputs pra textarea e inserir lógica para quebra de linha ao exceder 
-  certa quantidade de caracteres
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- Adicionar novo estilo com base no vídeo que salvei
+## Expanding the ESLint configuration
 
-- Adicionar Context API na TaskList para evitar PropDrilling
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
