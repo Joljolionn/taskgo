@@ -54,7 +54,7 @@ export default function HomePage() {
 	}
 	return (
 		<main>
-			<Header />
+			<Header qtdTasks={taskList.length} completedTasks={taskList.filter(task => task.completed).length}/>
 			<div className="content">
 				<TaskList
 					toggleCompleted={toggleCompleted}
