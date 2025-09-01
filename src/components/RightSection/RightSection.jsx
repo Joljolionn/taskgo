@@ -23,9 +23,9 @@ export default function RightSection(props) {
 			</form>
 
 			<div className="registrar">
-				<button>Login</button>
+				<button onClick={() => alert("Função ainda não implementada")}>Login</button>
 
-				<button>Cadastre-se</button>
+				<button onClick={() => alert("Função ainda não implementada")}>Cadastre-se</button>
 			</div>
 		</div>
 	);

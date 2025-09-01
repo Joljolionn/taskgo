@@ -12,6 +12,7 @@ export function TaskList(props) {
 						id={task.id}
 						title={task.title}
 						completed={task.completed}
+                        description={task.description}
 						toggleCompleted={() => props.toggleCompleted(task.id)}
 						deleteTask={() => props.deleteTask(task.id)}
 						taskEdit={(newTitle) => props.taskEdit(task.id, newTitle)}

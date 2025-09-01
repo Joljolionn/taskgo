@@ -7,6 +7,7 @@ import "./Task.css";
 
 export function Task(props) {
 	const [isEditing, setIsEditing] = useState(false);
+	const [isDescription, setIsDescription] = useState(false);
 	const [draftTitle, setDraftTitle] = useState(props.title);
 
 	function handleKeyDown(e) {
@@ -16,9 +17,15 @@ export function Task(props) {
 		}
 	}
 
+    function toggleDescription(){
+        setIsDescription(description => !description)
+    }
+
 	return (
 		<div className="taskRow">
-            <p className="ampliar">^</p>
+            <div className="content">
+                
+            <p className="ampliar" onClick={toggleDescription}>^</p>
 			{isEditing ? (
 				<input
 					className="taskTitle"
@@ -41,6 +48,10 @@ export function Task(props) {
 				id={props.id}
 			/>
 			<BtnDelete deleteTask={props.deleteTask} />
+        </div>
+        <div className="description" style={{display: isDescription ? "block" : "none"}}>
+        {props.description}
+        </div>
 		</div>
 	);
 }

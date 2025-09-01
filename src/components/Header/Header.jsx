@@ -7,7 +7,7 @@ export default function Header() {
 				search
 				<input className="searchbar"/>
 			</div>
-			<div class="tarefasConcluidas">tarefas</div>
+			<div className="tarefasConcluidas">tarefas</div>
 		</div>
 	);
 }

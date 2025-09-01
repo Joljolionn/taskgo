@@ -1,25 +1,36 @@
 .taskRow {
-  width: 100%;
-  height: 4em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid #000;
+	width: 100%;
+	min-height: 4em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #000;
 }
 
-.taskTitle {
-  margin-left: 15px;
-  margin-right: auto;
-  font-size: 1em;
-  cursor: pointer;
-  background: none;
+.taskRow .content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.taskTitle:hover {
-  text-decoration: underline;
+.taskRow .content .taskTitle {
+	margin-left: 15px;
+	margin-right: auto;
+	font-size: 1em;
+	cursor: pointer;
+	background: none;
 }
 
-.taskRow .ampliar {
-    margin-left: 20px;
-    text-align: center;
+.taskRow .content .taskTitle:hover {
+	text-decoration: underline;
+}
+
+.taskRow .content .ampliar {
+	margin-left: 20px;
+	text-align: center;
+}
+
+.taskRow .description {
+	width: 100%;
 }

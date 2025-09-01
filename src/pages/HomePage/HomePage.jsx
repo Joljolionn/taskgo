@@ -15,15 +15,21 @@ export default function HomePage() {
 
 	function handleSubmit(e) {
 		e.preventDefault();
+        if(e.target.elements[0].value == ""){
+            alert("Adicione um título para a tarefa")
+            return
+        }
 		setTaskList([
 			...taskList,
 			{
 				title: e.target.elements[0].value,
+                description: e.target.elements[1].value,
 				completed: false,
 				id: crypto.randomUUID(),
 			},
 		]);
 		e.target.elements[0].value = "";
+		e.target.elements[1].value = "";
 	}
 	function toggleCompleted(id) {
 		setTaskList((currentTaskList) =>
