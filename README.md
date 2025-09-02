@@ -25,3 +25,9 @@ cd taskgo && npm install
 ```
 npm run dev
 ```
+
+## Próximos passos
+
+- [ ] Implementar Typescript no lugar do Javascript
+- [ ] Melhorar UI
+- [ ] Implementar funcionalidade de login e cadastro
