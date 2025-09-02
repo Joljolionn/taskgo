@@ -2,10 +2,11 @@ import "./TaskList.css";
 import { Task } from "../Task/Task";
 
 export function TaskList(props) {
+        const taskList = props.searchRegex ? props.taskList.filter((task) => props.searchRegex.test(task.title)) : props.taskList
 		return (
 		<div className="taskList">
 			{props.taskList.length === 0 && "Lista de tarefas vazia!"}
-			{props.taskList.map((task) => {
+			{taskList.map((task) => {
 				return (
 					<Task
 						key={task.id}

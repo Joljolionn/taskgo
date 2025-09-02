@@ -5,9 +5,15 @@ export default function Header(props) {
 		<div className="header">
 			<div className="search">
 				search
-				<input className="searchbar"/>
+				<input
+					className="searchbar"
+					onChange={(e) => props.handleRegex(e.target.value)}
+				/>{" "}
+				{/* Terminar mecanismo de pesquisa*/}
 			</div>
-			<div className="tarefasConcluidas">{props.completedTasks}/{props.qtdTasks} concluídas</div>
+			<div className="tarefasConcluidas">
+				{props.completedTasks}/{props.qtdTasks} concluídas
+			</div>
 		</div>
 	);
 }
