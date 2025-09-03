@@ -33,4 +33,5 @@ npm run dev
     - [x] Adicionar cores
     - [ ] Adicionar animações CSS
     - [ ] Adicionar ícones adequados
+    - [ ] Implementar responsividade
 - [ ] Implementar funcionalidade de login e cadastro
