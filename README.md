@@ -30,4 +30,7 @@ npm run dev
 
 - [ ] Implementar Typescript no lugar do Javascript
 - [ ] Melhorar UI
+    - [x] Adicionar cores
+    - [ ] Adicionar animações CSS
+    - [ ] Adicionar ícones adequados
 - [ ] Implementar funcionalidade de login e cadastro

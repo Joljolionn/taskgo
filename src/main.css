@@ -1,8 +1,26 @@
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100vw;
-  min-height: 100vh;
+:root {
+	--background-body-dark: #1e171f;
+    --background-window-dark: #22202B;
+    --background-task-dark: #222126;
+    --text-light: #F9F9F9;
+    --text-dark: #898989;
+    --purple-darkest: #2C1E45;
+    --purple-dark-bright: #6133B6;
+    --purple-dark-dull: #603BA8;
+    --purple-light: #905EE2;
+    --red: #DE3F41;
+    --green: #39B387;
 }
+
+body {
+	min-width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: var(--background-body-dark);
+    color: var(--text-light);
+}
+
+* { border: none;}

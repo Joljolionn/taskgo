@@ -3,7 +3,7 @@ import "./RightSection.css";
 export default function RightSection(props) {
 	return (
 		<div className="rightsection">
-			<h1>Bem vindo!</h1>
+			<h1>Bem vindo ao TaskGo!</h1>
 
 			<form onSubmit={props.handleSubmit}>
 				<label htmlFor="tituloTask">

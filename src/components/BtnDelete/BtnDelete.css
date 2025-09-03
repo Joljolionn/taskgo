@@ -3,9 +3,8 @@
 	padding: 10px;
 	color: #8d65e3;
 	background: none;
-	border: 1px solid #000;
 	cursor: pointer;
-	transition: all 0.1s ease;
+	transition: all 0.2s ease-in-out;
 }
 
 .taskDelete:hover {

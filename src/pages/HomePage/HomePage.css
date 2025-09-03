@@ -1,9 +1,31 @@
 main {
-    height: 80vh;
+    height: 84vh;
     width: 80vw;
     border: 1px solid #000;
     display: flex;
     flex-direction: column; /* header em cima, conteúdo embaixo */
+    position: relative;
+    background-color: var(--background-window-dark);
+}
+
+.backgroundNameTop {
+    position: fixed;
+    z-index: 0;
+    left: 10vw;
+    bottom: 33vw;
+    font-size: 12vw;
+    font-family: SixtyFour;
+    color: var(--purple-darkest);
+}
+
+.backgroundNameBottom{
+    position: fixed;
+    z-index: -1;
+    right: 16vw;
+    top: 35vw;
+    font-size: 12vw;
+    font-family: SixtyFour;
+    color: var(--purple-darkest);
 }
 
 .content {

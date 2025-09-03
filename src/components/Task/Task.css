@@ -5,13 +5,16 @@
 	flex-direction: column;
 	align-items: center;
 	border: 1px solid #000;
+    background-color: var(--background-task-dark);
 }
 
 .taskRow .content {
+    min-height: 4em;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+    border: 1px solid #000;
 }
 
 .taskRow .content .taskTitle {
@@ -29,8 +32,16 @@
 .taskRow .content .ampliar {
 	margin-left: 20px;
 	text-align: center;
+    cursor: pointer;
 }
 
 .taskRow .description {
 	width: 100%;
+    margin-left: 100px;
+    padding: 10px;
+    color: var(--text-dark);
+}
+
+.taskRow input {
+    color: var(--text-light);
 }
