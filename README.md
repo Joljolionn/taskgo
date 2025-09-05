@@ -35,3 +35,5 @@ npm run dev
     - [ ] Adicionar ícones adequados
     - [ ] Implementar responsividade
 - [ ] Implementar funcionalidade de login e cadastro
+- [ ] Deixar estilo mais clean (parecido ao discord)
+- [ ] Implementar funcionalidade de checklists
