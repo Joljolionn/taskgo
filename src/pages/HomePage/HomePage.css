@@ -8,25 +8,7 @@ main {
     background-color: var(--background-window-dark);
 }
 
-.backgroundNameTop {
-    position: fixed;
-    z-index: 0;
-    left: 10vw;
-    bottom: 33vw;
-    font-size: 12vw;
-    font-family: SixtyFour;
-    color: var(--purple-darkest);
-}
 
-.backgroundNameBottom{
-    position: fixed;
-    z-index: -1;
-    right: 16vw;
-    top: 35vw;
-    font-size: 12vw;
-    font-family: SixtyFour;
-    color: var(--purple-darkest);
-}
 
 .content {
     display: flex; /* tasklist e rightsection lado a lado */

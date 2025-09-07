@@ -56,7 +56,6 @@ export default function HomePage() {
 	}
 
 	const handleRegex = (value) => {
-        
 		try {
 			// cria regex case-insensitive
 			const regex = new RegExp(value, "i");
@@ -68,23 +67,24 @@ export default function HomePage() {
 	};
 
 	return (
-        <>
-            <h1 className="backgroundNameTop">TASKGO</h1>
-        <main>
-                <Header
-                    qtdTasks={taskList.length}
-                    completedTasks={taskList.filter((task) => task.completed).length}
-                    handleRegex={handleRegex} />
-                <div className="content">
-                    <TaskList
-                        toggleCompleted={toggleCompleted}
-                        deleteTask={deleteTask}
-                        taskEdit={taskEdit}
-                        taskList={taskList}
-                        searchRegex={searchRegex} />
-                    <RightSection handleSubmit={handleSubmit} />
-                </div>
-            <h1 className="backgroundNameBottom">TASKGO</h1>
-            </main></>
+		<main>
+			<Header
+				qtdTasks={taskList.length}
+				completedTasks={
+					taskList.filter((task) => task.completed).length
+				}
+				handleRegex={handleRegex}
+			/>
+			<div className="content">
+				<TaskList
+					toggleCompleted={toggleCompleted}
+					deleteTask={deleteTask}
+					taskEdit={taskEdit}
+					taskList={taskList}
+					searchRegex={searchRegex}
+				/>
+				<RightSection handleSubmit={handleSubmit} />
+			</div>
+		</main>
 	);
 }
